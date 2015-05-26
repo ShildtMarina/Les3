@@ -1,0 +1,32 @@
+package les3as4;
+
+import java.util.Scanner;
+
+
+public class Les3As4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner cs = new Scanner(System.in);
+        System.out.println("Input weight of figure:");
+        int weight = cs.nextInt();
+        int height = weight * 2;
+        int j = 0;
+        int i = 0;
+        while (i < height - 1) {
+
+            if ((j >= weight - (weight - i))||(j >=(weight+ (weight - i)))) {
+                System.out.println();
+                i++;
+                j = 0;
+
+            }
+            System.out.print("*");
+            j++;
+
+        }
+      cs.close();
+    }
+}
