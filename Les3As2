@@ -1,0 +1,28 @@
+package les3as2;
+
+import java.util.Scanner;
+
+
+public class Les3As2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double r = 4;
+        Scanner cs = new Scanner(System.in);
+        System.out.println("Input coordinates of circle");
+        System.out.println("x:");
+        double x = cs.nextDouble();
+        System.out.println("y");
+        double y = cs.nextDouble();
+        //equation of Circle
+        if ((Math.pow(x, 2) + Math.pow(y, 2)) <= (Math.pow(r, 2))) {
+            System.out.println("Point is in circle");
+        } else {
+            System.out.println("Point is not in circle");
+        }
+        cs.close();
+    }
+
+}
