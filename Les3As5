@@ -1,0 +1,27 @@
+package factorial;
+
+import java.util.Scanner;
+
+public class Factorial {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner cs = new Scanner(System.in);
+        System.out.println("Input number for calculation factorial");
+        int n = cs.nextInt();
+        int fact = 1;
+        if (4 < n && n < 16) {
+            for (int i = 1; i <= n; i++) {
+                fact = fact * i;
+            }
+            System.out.println(n + "!=" + fact);
+        } else {
+            System.out.println("Input number for calculation factorial from 4 to 16");
+        }
+
+        cs.close();
+    }
+
+}
