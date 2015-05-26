@@ -3,10 +3,6 @@ package les3as1;
 import java.util.Scanner;
 
 
-/**
- *
- * @author Marina
- */
 public class Les3As1 {
 
     /**
